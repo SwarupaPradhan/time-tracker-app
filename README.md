@@ -1,115 +1,45 @@
-# ⏱️ Time Tracker App
+# Time Tracker App
 
-A full-stack time tracking application built with **Angular** and **Spring Boot**. This app allows users to manage tasks, track time spent on them, and store the data persistently.
-
----
-
-## 📁 Project Structure
-
-```
-time-tracker-app/
-├── frontend/   → Angular 17 App (Task Tracker UI)
-└── backend/    → Spring Boot App (REST API + DB)
-```
-
----
+A full‑stack time tracking application built with Angular (frontend) and Spring Boot (backend).
 
 ## 🚀 Features
+- Create, edit, and delete tasks
+- Start/stop time tracking per task
+- View total time spent per task
+- REST API backend with persistent storage
 
-- ✅ Create, delete, and manage tasks
-- ✅ Start/stop time tracking per task
-- ✅ Track total time spent on each task
-- ✅ Store data in a database
-- ✅ RESTful API with Spring Boot
-- ✅ Angular-based responsive UI
+## 🛠 Tech Stack
+**Frontend:** Angular, TypeScript ,HTML & CSS / SCSS   
+**Backend:** Java, Spring Boot, Spring Data JPA  
+**Database:** H2 or MySQL
 
----
+## 📁 Project Structure
+time-tracker-app/
+├── frontend/ → Angular app
+│ ├── src/
+│ └── angular.json
+└── backend/ → Spring Boot REST API
+├── src/main/java/
+├── src/main/resources/
+└── pom.xml   
 
-## 🛠️ Tech Stack
-
-### Frontend:
-- Angular 17+
-- TypeScript
-- RxJS
-- Angular Standalone Components
-- Tailwind (optional)
-
-### Backend:
-- Java 17+
-- Spring Boot
-- Spring Data JPA
-- H2 / MySQL (pluggable)
-- Lombok
-
----
-
-## 🔧 Getting Started
-
-### 🚨 Prerequisites
-- Node.js + npm
-- Angular CLI (`npm install -g @angular/cli`)
-- Java 17+
-- Maven
-
----
-
-### 📦 Run Backend
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-> Server will run on: `http://localhost:8080`
-
----
-
-### 💻 Run Frontend
-
-```bash
+## Frontend
 cd frontend
 npm install
 ng serve
-```
+API runs at http://localhost:8080
 
-> App will be available at: `http://localhost:4200`
+📚 What I Learned / Practiced
+Component-based architecture in Angular
+REST API design with Spring Boot
+Frontend ↔ Backend integration
+Handling state, timers, and user input
+Clean folder structure and professional project setup
+Writing meaningful commit messages
+Testing API endpoints using Postman
+Angular component architecture
+REST API design with Spring Boot
+Frontend ⇄ backend communication
 
----
 
-## 🧪 API Endpoints (Backend)
 
-| Method | Endpoint                 | Description         |
-|--------|--------------------------|---------------------|
-| GET    | `/api/tasks`             | List all tasks      |
-| POST   | `/api/tasks`             | Create a new task   |
-| DELETE | `/api/tasks/{id}`        | Delete a task       |
-| POST   | `/api/tasks/{id}/start`  | Start tracking      |
-| POST   | `/api/tasks/{id}/stop`   | Stop tracking       |
-
----
-
-## 📷 Screenshots *(optional)*
-
-> Include UI screenshots here to showcase the app.
-
----
-
-## 📌 Future Enhancements
-
-- ✅ Timer-based auto stop
-- ✅ User authentication
-- ✅ Export tracked time to CSV
-- ✅ Docker support
-
----
-
-## 👩‍💻 Author
-
-**Swarupa Pradhan**  
-[GitHub Profile](https://github.com/SwarupaPradhan)
-
----
-
-## 🪪 License
-
-This project is licensed under the MIT License. See `LICENSE` for more info.
